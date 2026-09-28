@@ -1,0 +1,49 @@
+#content {
+    max-width: 50%;
+    border: 1px solid #A9A9A9;
+    margin: 4em auto;
+}
+
+h1, h5 {
+    font-family: "Crimson Text", serif;
+    text-align: center;
+}
+
+#italic {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #006EB6;
+    margin-bottom: 0.2em;
+}
+
+hr {
+    max-width: 70%;
+    margin-bottom: 3em;
+}
+
+p, li {
+    max-width: 70%;
+    margin: auto;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+img {
+    max-width: 15%;
+}
+
+#logo {
+    text-align: center;
+    margin: 2.5em;
+}
