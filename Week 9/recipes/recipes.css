@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+}
+
+#recipe-book {
+    max-width: 120px;
+    max-height: 120px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 550%;
+    margin: 0;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#search-bar {
+    width: 90%;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    font-size: 125%;
+}
+
+#search-icon {
+    max-width: 45px;
+    padding: 5px;
+}
+
+.recipe {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    img {
+        max-width: 94%;
+        padding: 20px;
+    }
+    button {
+        margin-left: 20px;
+        max-width: 80px;
+    }
+    h2 {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 200%;
+        color: #1aaae2;
+    }
+    .rating {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .description {
+        display: none;
+    }
+}
+
+h1, h2 {
+    font-family: 'Amatic SC';
+}
+
+footer {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    a img {
+        width: 40px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #search {
+        width: 80%;
+    }
+    .recipe {
+        width: 80%;
+        height: 370px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        img {
+            width: 440px;
+        }
+        button {
+            margin-top: 20px;
+            margin-left: 0;
+            max-height: 25px;
+        }
+        h2 {
+            margin-left: 0;
+        }
+        .rating {
+            margin-left: 0;
+        }
+        .description {
+            display: block;
+            width: calc(92% - 440px);
+            margin-left: 0;
+        }
+    }
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 80%;
+        margin-left: 10%;
+    }
+}
